@@ -1,0 +1,67 @@
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+	    <title>CSC 430 Accounts Page</title>
+	</head>
+		<body>
+
+
+		<!-- Unordered List -->
+		<ul>
+			<!-- List item 1 = ACCOUNT 1 -->
+			<li>
+				<p><strong>Account: </strong><span id="outputName1">MyFirstAccount</span><strong> - - - - - - - - Amount: $</strong><span id="outputAmt1">0.00</span>.
+				</p>
+
+				<button id="name1">Edit Name</button>
+				<button id="amt1">Update Balance</button>
+			</li>
+
+			<!-- List item 2 = ACCOUNT 2 -->
+			<li>
+				<p><strong>Account: </strong><span id="outputName2">MySecondAccount</span><strong> - - - - - - - - Amount: $</strong><span id="outputAmt2">0.00</span>.
+				</p>
+
+				<button id="name2">Edit Name</button>
+				<button id="amt2">Update Balance</button>
+			</li>
+
+		</ul>
+		<script>
+
+			/**
+			  *		ACCOUNT 1 ACTIONS
+			  */
+			  		//new name
+			document.getElementById("name1").onclick = function(){
+				var newName = prompt("Enter the accounts name:");	
+			  document.getElementById("outputName1").innerText = newName;
+			}
+					//new amount
+			document.getElementById("amt1").onclick = function(){
+				var newAmt = prompt("Enter the new balance:");
+			  document.getElementById("outputAmt1").innerText = newAmt;
+			}
+
+			/**
+			  *		ACCOUNT 2 ACTIONS
+			  */
+			  		//new name
+			document.getElementById("name2").onclick = function(){
+				var newName = prompt("Enter the accounts name:");
+			  document.getElementById("outputName2").innerText = newName;
+			}
+					//new amount
+			document.getElementById("amt2").onclick = function(){
+				var newAmt = prompt("Enter the new balance:");
+			  document.getElementById("outputAmt2").innerText = newAmt;
+			}
+
+		</script>
+
+
+		</body>
+</html>
+

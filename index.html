@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	   <title>Login Page - CSC430 Final</title>
+	  	<!--
+ 
+       CSC 430 Final Project, Prof Zhang.
+       
+       LOG IN PAGE
+       index.html(HTML+CSS) USES process_data.php, which MUST be in same root as index.html.
+       
+	   AUTHOR: Travis Trotto
+       Created 05/01/2020
+       
+       Last updated:
+	   05/06/2020
+	   -->
+       
+	</head>
+
+<!-- In-Line CSS to Center Login Form-->
+<style type="text/css">
+	body { text-align: center; }
+	form { display: inline-block; }
+</style>
+
+<!-- Logo Header -->
+<body>
+	<div class ="logo">
+    	<img src="logo.png" alt="HouseBank Logo">
+    </div>
+    
+<!--LOGIN FORM-->
+	<form action="process_data.php" method="GET" align="CENTER">
+	
+		<br><br>
+		<label><h2>HouseBank Login</h2></label>
+
+		<!-- Username user<-text -->
+		<label>Username: <input type="text" name="user" placeholder="admin"></label>
+		<br><br>
+
+	   <!-- Password pwd<-text -->
+	   Password: <input type="text" name="pwd" placeholder="admin1">
+	   <br><br>
+
+	   <!-- Submit & Register Button submit<-submit -->
+	   <input type="submit" name="submit" value="submit">
+	   <input type="submit" name="submit" value="register">
+       
+       <!-- Information -->
+       <p>Login, or click "Register" to create an account.</p>
+       <br>
+       <p>NOTE: Username: "admin" and password "admin1" always works for testing purposes.</p>
+
+	</form>
+</body>
+
+</html>
